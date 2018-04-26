@@ -1,0 +1,13 @@
+diff --git a/chrome/app/chrome_crash_reporter_client.cc b/chrome/app/chrome_crash_reporter_client.cc
+index c8b924da3c7b27ae7d93aca4ebf296df8bba286b..ffd9b767b2981d4ae57dc137d7cb1aaa99b67f9a 100644
+--- a/chrome/app/chrome_crash_reporter_client.cc
++++ b/chrome/app/chrome_crash_reporter_client.cc
+@@ -128,7 +128,7 @@ int ChromeCrashReporterClient::GetAndroidMinidumpDescriptor() {
+   return kAndroidMinidumpDescriptor;
+ }
+ #endif
+-
++//TEST FORK
+ bool ChromeCrashReporterClient::EnableBreakpadForProcess(
+     const std::string& process_type) {
+   return process_type == switches::kRendererProcess ||
